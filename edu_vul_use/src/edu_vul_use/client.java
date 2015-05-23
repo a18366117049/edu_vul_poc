@@ -35,7 +35,7 @@ public class client {
 		return bs.toString();
 		
 	}
-	public static ArrayList <String> re_info(String s)
+	public static ArrayList <String> re_info(String s)//regular match html to get info
 	{	
 		ArrayList <String> info_list= new ArrayList<String>(); 
 		String temp="";
@@ -74,7 +74,7 @@ public class client {
 		return info_list;
 		}
 	
-	public static String re_password(String s)
+	public static String re_password(String s)//regular match html to get password
 	{	String temp="";
 		Pattern pattern = Pattern.compile("<TD ALIGN=\"LEFT\">.*</TD>/n<TD ALIGN=\"LEFT\">");
 		Matcher matcher = pattern.matcher(s);
@@ -95,14 +95,14 @@ public class client {
 		String pass=temp.substring(0, end);
 		return pass;
 		}
-	public static String get_url_1(String sno)
+	public static String get_url_1(String sno)//get password url
 	{
 		String url="";
 		url="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/qcb.table_browse?ctable=XK_MMB&ccolumns=*&cclauses=where%20xh%20=%27"+sno+"%27&nrow_min=1&nrow_max=150";
 		return url;		
 		
 	}
-	public static String get_url_2(String sno)
+	public static String get_url_2(String sno)//get info url
 	{
 		String url="";
 		url="http://jwxt.sdu.edu.cn:7890/pls/wwwbks/qcb.table_browse?ctable=XJ_XJB&ccolumns=*&cclauses=where%20xh%20=%27"+sno+"%27&nrow_min=1&nrow_max=150";
