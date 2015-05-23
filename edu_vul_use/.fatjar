@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu May 21 16:05:23 CST 2015
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=edu_vul_use_fat.jar
+manifest.mergeall=true
+manifest.mainclass=edu_vul_use.gui
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
