@@ -18,6 +18,9 @@ import org.apache.commons.httpclient.methods.PostMethod;
 import org.htmlparser.visitors.TextExtractingVisitor;
 import org.htmlparser.Parser;
 
+
+
+
 public class client {
 	public static String request(String url) {
 		StringBuffer bs = new StringBuffer();
